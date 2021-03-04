@@ -1,6 +1,7 @@
 import React from "react";
 import GlobalStyle from "./components/GlobalStyle";
 import Nav from "./components/Nav";
+import ScrollToTop from "./components/ScrollToTop";
 
 //pages
 import AboutUs from "./pages/AboutUs";
@@ -20,6 +21,8 @@ function App() {
 		<div className="App">
 			<GlobalStyle />
 			<Nav />
+
+			<ScrollToTop />
 
 			<AnimatePresence exitBeforeEnter>
 				<Switch location={location} key={location.pathname}>
